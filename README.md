@@ -1,9 +1,11 @@
 *Mengambil Elemen Video dari HTML:*
+
 EX Code : let video = document.getElementById("video");
 
     >Penjelasan: Mengambil elemen <video> dari halaman HTML dengan id "video" dan menyimpannya dalam variabel video.
 
 *Membuat Elemen Canvas:*
+
 EX Code : let canvas = document.createElement("canvas");
 
     >Penjelasan: Membuat elemen <canvas> baru yang akan digunakan untuk menggambar deteksi wajah.
