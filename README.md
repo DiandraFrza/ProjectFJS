@@ -2,7 +2,7 @@
 
 EX Code : let video = document.getElementById("video");
 
-    >Penjelasan: Mengambil elemen <video> dari halaman HTML dengan id "video" dan menyimpannya dalam variabel video.
+>Penjelasan: Mengambil elemen <video> dari halaman HTML dengan id "video" dan menyimpannya dalam variabel video.
 
 *Membuat Elemen Canvas:*
 
@@ -14,7 +14,7 @@ EX Code : let canvas = document.createElement("canvas");
 
 EX Code : document.body.append(canvas);
 
-    >Penjelasan: Menambahkan elemen canvas yang baru dibuat ke dalam body dari halaman HTML sehingga elemen ini menjadi bagian dari tampilan halaman.
+>Penjelasan: Menambahkan elemen canvas yang baru dibuat ke dalam body dari halaman HTML sehingga elemen ini menjadi bagian dari tampilan halaman.
 
 *Mendapatkan Konteks 2D dari Canvas:*
 
@@ -26,7 +26,7 @@ EX Code :let ctx = canvas.getContext("2d");
 
 EX Code :let displaySize = { width: 1280, height: 720 };
 
-    >Penjelasan: Menentukan ukuran tampilan video dan canvas yaitu lebar 1280 piksel dan tinggi 720 piksel.
+>Penjelasan: Menentukan ukuran tampilan video dan canvas yaitu lebar 1280 piksel dan tinggi 720 piksel.
 
 *Bagian Memulai Stream dari Webcam**
 
@@ -42,7 +42,7 @@ EX Code :let displaySize = { width: 1280, height: 720 };
         }).catch(err => console.error('Terjadi Error pada saat mengakses webcam: ', err));
     };
 
-        >Penjelasan:
+>Penjelasan:
             Baris 1: Mendefinisikan fungsi startStream.
             Baris 2: Mencetak pesan ke konsol bahwa webcam akan dimulai.
             Baris 3-7: Menggunakan navigator.mediaDevices.getUserMedia untuk meminta akses ke webcam dengan pengaturan lebar dan tinggi yang ditentukan serta tanpa audio.
@@ -56,7 +56,7 @@ EX Code :let displaySize = { width: 1280, height: 720 };
     EX Code :console.log(faceapi.nets);
 console.log("**[i] Mencoba memulai Model");
 
-    >Penjelasan: Mencetak objek faceapi.nets ke konsol untuk melihat model yang tersedia dan mencetak pesan bahwa model sedang dimuat.
+>Penjelasan: Mencetak objek faceapi.nets ke konsol untuk melihat model yang tersedia dan mencetak pesan bahwa model sedang dimuat.
 
 *Memuat Semua Model yang Dibutuhkan:*
 
@@ -97,7 +97,7 @@ EX Code :Promise.all([
         });
     }
 
-        >Penjelasan:
+>Penjelasan:
             Baris 1: Mendefinisikan fungsi asinkron detect.
             Baris 2-4: Menggunakan faceapi.detectAllFaces untuk mendeteksi wajah pada elemen video, dan memperluas deteksi dengan landmark wajah, ekspresi wajah, serta estimasi usia dan jenis kelamin.
             Baris 5: Menghapus semua gambar di canvas.
@@ -117,7 +117,7 @@ EX Code :Promise.all([
         setInterval(detect, 100);
     });
 
-        >Penjelasan:
+>Penjelasan:
             Baris 1: Menambahkan event listener untuk event play pada elemen video.
             Baris 2-3: Mengatur lebar dan tinggi canvas sesuai dengan ukuran tampilan.
             Baris 4: Menyesuaikan dimensi canvas untuk mencocokkan dimensi video.
