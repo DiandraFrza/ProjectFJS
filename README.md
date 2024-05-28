@@ -8,7 +8,7 @@ EX Code : let video = document.getElementById("video");
 
 EX Code : let canvas = document.createElement("canvas");
 
-    >Penjelasan: Membuat elemen <canvas> baru yang akan digunakan untuk menggambar deteksi wajah.
+>Penjelasan: Membuat elemen <canvas> baru yang akan digunakan untuk menggambar deteksi wajah.
 
 *Menambahkan Canvas ke Halaman:*
 
