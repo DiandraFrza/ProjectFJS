@@ -68,7 +68,7 @@ EX Code :Promise.all([
         faceapi.nets.ageGenderNet.loadFromUri('/models')
     ]).then(startStream);
 
-        >Penjelasan: Menggunakan Promise.all untuk memuat semua model yang diperlukan dari direktori /models. Setelah semua model selesai dimuat, memanggil fungsi startStream untuk memulai webcam.
+>Penjelasan: Menggunakan Promise.all untuk memuat semua model yang diperlukan dari direktori /models. Setelah semua model selesai dimuat, memanggil fungsi startStream untuk memulai webcam.
 
 *Bagian Deteksi Wajah*
 
