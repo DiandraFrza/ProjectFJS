@@ -43,11 +43,11 @@ EX Code :let displaySize = { width: 1280, height: 720 };
     };
 
 >Penjelasan:
-            Baris 1: Mendefinisikan fungsi startStream.
-            Baris 2: Mencetak pesan ke konsol bahwa webcam akan dimulai.
-            Baris 3-7: Menggunakan navigator.mediaDevices.getUserMedia untuk meminta akses ke webcam dengan pengaturan lebar dan tinggi yang ditentukan serta tanpa audio.
-            Baris 8: Jika permintaan berhasil, menetapkan stream video dari webcam sebagai sumber video elemen HTML.
-            Baris 9: Jika terjadi kesalahan saat mengakses webcam, mencetak pesan kesalahan ke konsol.
+ 1.Baris 1: Mendefinisikan fungsi startStream.
+ 2.Baris 2: Mencetak pesan ke konsol bahwa webcam akan dimulai.
+ 3.Baris 3-7: Menggunakan navigator.mediaDevices.getUserMedia untuk meminta akses ke webcam dengan pengaturan lebar dan tinggi yang ditentukan serta tanpa audio.
+ 4.Baris 8: Jika permintaan berhasil, menetapkan stream video dari webcam sebagai sumber video elemen HTML.
+ 5.Baris 9: Jika terjadi kesalahan saat mengakses webcam, mencetak pesan kesalahan ke konsol.
 
 *Bagian Memuat Model Face API*
 
@@ -98,12 +98,12 @@ EX Code :Promise.all([
     }
 
 >Penjelasan:
-            Baris 1: Mendefinisikan fungsi asinkron detect.
-            Baris 2-4: Menggunakan faceapi.detectAllFaces untuk mendeteksi wajah pada elemen video, dan memperluas deteksi dengan landmark wajah, ekspresi wajah, serta estimasi usia dan jenis kelamin.
-            Baris 5: Menghapus semua gambar di canvas.
-            Baris 6: Mengubah ukuran hasil deteksi sesuai dengan ukuran tampilan.
-            Baris 7-9: Menggambar deteksi wajah, landmark wajah, dan ekspresi wajah di canvas.
-            Baris 10-15: Untuk setiap hasil deteksi, menggambar informasi usia dan jenis kelamin di bawah kotak deteksi wajah.
+ 1.Baris 1: Mendefinisikan fungsi asinkron detect.
+ 2.Baris 2-4: Menggunakan faceapi.detectAllFaces untuk mendeteksi wajah pada elemen video, dan memperluas deteksi dengan landmark wajah, ekspresi wajah, serta estimasi usia dan jenis kelamin.
+ 3.Baris 5: Menghapus semua gambar di canvas.
+ 4.Baris 6: Mengubah ukuran hasil deteksi sesuai dengan ukuran tampilan.
+ 5.Baris 7-9: Menggambar deteksi wajah, landmark wajah, dan ekspresi wajah di canvas.
+ 6.Baris 10-15: Untuk setiap hasil deteksi, menggambar informasi usia dan jenis kelamin di bawah kotak deteksi wajah.
 
 *Event Listener untuk Video*
 
@@ -118,9 +118,9 @@ EX Code :Promise.all([
     });
 
 >Penjelasan:
-            Baris 1: Menambahkan event listener untuk event play pada elemen video.
-            Baris 2-3: Mengatur lebar dan tinggi canvas sesuai dengan ukuran tampilan.
-            Baris 4: Menyesuaikan dimensi canvas untuk mencocokkan dimensi video.
-            Baris 5: Memulai interval yang akan memanggil fungsi detect setiap 100 milidetik untuk mendeteksi wajah secara berkala saat video diputar.
+ 1.Baris 1: Menambahkan event listener untuk event play pada elemen video.
+ 2.Baris 2-3: Mengatur lebar dan tinggi canvas sesuai dengan ukuran tampilan.
+ 3.Baris 4: Menyesuaikan dimensi canvas untuk mencocokkan dimensi video.
+ 4.Baris 5: Memulai interval yang akan memanggil fungsi detect setiap 100 milidetik untuk mendeteksi wajah secara berkala saat video diputar.
 
 >Penjelasan di atas menggambarkan bagaimna setiap bagian kode bekerja untuk memulai webcam, memuat model deteksi wajah, dan mendeteksi serta menggambar informasi wajah di canvas secara real-time.
